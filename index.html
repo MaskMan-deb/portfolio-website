@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raunak - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(16, 7, 70);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            position: relative; 
+        }
+
+        nav::before { 
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(74, 74, 129, 0.4); 
+            border: 5px solid rgba(43, 159, 252, 0.6); 
+            animation: glow 2s linear infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                border-color: rgb(43, 158, 252);
+            }
+            50% {
+                border-color: rgba(74, 74, 129, 0.4);
+            }
+            100% {
+                border-color: rgb(43, 158, 252);
+            }
+        }
+
+        div.left {
+            font-family: 'Sixtyfour', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 5px;
+            color: #ffffff;
+        }
+
+        div.right {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 12px;
+            font-family: 'Poppins' sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">PERSONAL PORTFOLIO</div>
+            <div class="right">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROFILE</li>
+                    <li>RESUME</li>
+                    <li>PROJECTS</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="left-2">
+                left
+            </div>
+            <div class="right-2">
+                right
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
