@@ -14,7 +14,7 @@
     <style>
         * {
             margin: 0;
-            padding: 0;
+            padding: 1;
         }
 
         body {
@@ -27,18 +27,18 @@
             justify-content: space-around;
             align-items: center;
             height: 70px;
-            position: relative; 
+            position: relative;
         }
 
-        nav::before { 
+        nav::before {
             content: "";
             position: absolute;
             top: 0px;
             left: 0px;
             right: 0px;
             bottom: 0px;
-            background-color: rgba(74, 74, 129, 0.4); 
-            border: 5px solid rgba(43, 159, 252, 0.6); 
+            background-color: rgba(74, 74, 129, 0.4);
+            border: 5px solid rgba(43, 159, 252, 0.6);
             animation: glow 2s linear infinite;
         }
 
@@ -46,9 +46,11 @@
             0% {
                 border-color: rgb(43, 158, 252);
             }
+
             50% {
                 border-color: rgba(74, 74, 129, 0.4);
             }
+
             100% {
                 border-color: rgb(43, 158, 252);
             }
@@ -81,7 +83,8 @@
             font-size: 16px;
             font-weight: 400;
         }
-        .firstSection{
+
+        .firstSection {
             display: flex;
             justify-content: space-around;
             margin: 23px;
