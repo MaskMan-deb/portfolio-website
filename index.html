@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -35,8 +38,8 @@
             content: "";
             position: absolute;
             top: 0px;
-            left: -5px;
-            right: -5px;
+            left: 0px;
+            right: 0px;
             bottom: 0px;
             background-color: rgba(74, 74, 129, 0.4);
             border: 5px solid rgba(43, 159, 252, 0.6);
@@ -90,6 +93,26 @@
             justify-content: space-around;
             margin: 23px;
         }
+
+        .left-2{
+            display: inline-block;
+            align-items: left;
+            font-family: 'Russo One', sans-serif;
+            font-size: 48px;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(50, end);
+        }
+
+        @keyframes typing{
+            from{
+                width: 0;
+            }
+            to{
+                width:100%;
+            }
+        }
     </style>
 </head>
 
@@ -113,7 +136,7 @@
     <main>
         <section class="firstSection">
             <div class="left-2">
-                left
+                NAME : RAUNAK MISHRA
             </div>
             <div class="right-2">
                 right
