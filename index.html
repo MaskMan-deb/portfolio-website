@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -79,22 +85,47 @@
             overflow: hidden;
         }
 
-        .left-2-1{
+        .left-2-1 {
             display: flexbox;
             align-items: left;
-            font-family: 'Russo One' , sans-serif;
+            font-family: 'Russo One', sans-serif;
             font-size: 48px;
             letter-spacing: 1.0px;
         }
 
-        .paragraph{
+        .paragraph {
             display: flexbox;
             align-items: left;
-            font-family: 'Russo One' , sans-serif;
-            font-size: 24px;
-            letter-spacing: 1.0px;;
+            font-family: "Protest Strike", sans-serif;
+            font-size: 28px;
+            letter-spacing: 1.0px;
+            ;
         }
-        
+
+        .secondsection{
+            display: flexbox;
+            justify-content: space-around;
+            margin: 23px
+        }
+
+        .overview{
+            display: flexbox;
+            font-family: "Bebas Neue" , sans-serif;
+            font-size: 36px;
+            letter-spacing: 2.4px;
+        }
+
+        .myimage{
+            border:8px solid #ADD8E6;
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            object-position: right top;
+            overflow: hidden;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 
@@ -118,18 +149,29 @@
     <main>
         <section class="firstSection">
             <div class="left-2">
-                    RAUNAK MISHRA
-                    
-                    <div class="left-2-1">A Front-End Developer !!
-                        
-                        <p class="paragraph">I have been aspiring to be a Full Stack Developer and so I have started <br>my journey in 
-                            Web Developement with basic Frontend and with whatever <br>small knowledge I have, I am trying to make a Portfolio Website for <br>myself.</p>
-                    </div>
-                        </div>
-                        </div>
+                RAUNAK MISHRA
+                <div class="left-2-1">A Front-End Developer !!
+                    <p class="paragraph">I have been aspiring to be a Full Stack Developer and so I have started <br>my
+                        journey in
+                        Web Developement with basic Frontend and with whatever <br>small knowledge I have, I am trying
+                        to make a Portfolio Website for <br>myself.</p>
+                </div>
+            </div>
+            </div>
             </div>
             <div class="right-2">
                 <img src="frontend-developer.png" alt="">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <div>
+                <hr>
+                <div>
+                    <br>
+                    <h1 class="overview">Overview About Me --</h1>
+                    <img class="myimage" src="new.jpg" alt="">
+                </div>
             </div>
         </section>
     </main>
