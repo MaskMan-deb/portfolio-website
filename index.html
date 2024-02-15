@@ -18,8 +18,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -102,29 +103,37 @@
             ;
         }
 
-        .secondsection{
+        .secondsection {
             display: flexbox;
             justify-content: space-around;
             margin: 23px
         }
 
-        .overview{
+        .overview {
             display: flexbox;
-            font-family: "Bebas Neue" , sans-serif;
+            font-family: "Bebas Neue", sans-serif;
             font-size: 36px;
             letter-spacing: 2.4px;
         }
 
-        .myimage{
-            border:8px solid #ADD8E6;
+        .myimage {
+            border: 8px solid #ADD8E6;
             border-radius: 50%;
             width: 500px;
             height: 500px;
             object-fit: cover;
-            object-position: right top;
+            object-position: 60% 33%;
             overflow: hidden;
             display: block;
             margin: 0 auto;
+        }
+
+        .imgsidedetails{
+            display: flexbox;
+            align-items: left;
+            font-family: "SixtyFour" , sans-serif;
+            font-size: 20px;
+            line-height: 30px;
         }
     </style>
 </head>
@@ -167,9 +176,18 @@
         <section class="secondsection">
             <div>
                 <hr>
+                
                 <div>
                     <br>
                     <h1 class="overview">Overview About Me --</h1>
+                    <br>
+                    <div class="imgsidedetails">
+                        <ul>
+                            <li>D.O.B: 07.02.2005</li>
+                            <li>Birth Place: Kolkata</li>
+                            <li>Expertise In UI/UX Design</li>
+                        </ul>
+                    </div>
                     <img class="myimage" src="new.jpg" alt="">
                 </div>
             </div>
