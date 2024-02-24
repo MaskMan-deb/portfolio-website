@@ -21,9 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -74,10 +74,10 @@
             cursor: default;
         }
 
-        nav ul li:hover{
+        nav ul li:hover {
             transform: translateY(-3px);
-            filter:brightness(85%);
-            color:#2bb7ee;
+            filter: brightness(85%);
+            color: #2bb7ee;
         }
 
         .firstSection {
@@ -156,7 +156,8 @@
             align-items: center;
             font-family: 'Bebas Neue', sans-serif;
             font-size: 60px;
-            margin: 10px; /* Adjust as needed */
+            margin: 10px;
+            /* Adjust as needed */
         }
 
         table {
@@ -174,26 +175,90 @@
         tr:nth-child(even) {
             background-color: #06258a;
         }
-        
-        ::-webkit-scrollbar{
+
+        ::-webkit-scrollbar {
             width: 8px
         }
 
-        ::-webkit-scrollbar-track{
+        ::-webkit-scrollbar-track {
             background-color: rgba(14, 9, 43, 0.37);
         }
 
-        ::-webkit-scrollbar-thumb{
-            background-color:rgb(74, 46, 231);
+        ::-webkit-scrollbar-thumb {
+            background-color: rgb(74, 46, 231);
             border-radius: 20px;
         }
 
         .tools-description {
             text-align: center;
-            font-family: 'Anta' , sans-serif;
+            font-family: 'Anta', sans-serif;
             font-size: 45px;
-            margin:20px auto;
+            margin: 20px auto;
         }
+
+        .name {
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+    font-size: 72px;
+    letter-spacing: 1.5px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative; /* Ensure proper positioning for the hover effect */
+}
+
+.name:hover span {
+    animation: popAndColor 0.5s forwards;
+}
+
+@keyframes popAndColor {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Scale up to 110% */
+    }
+}
+
+.name span {
+    display: inline-block;
+    transition: color 0.5s ease-in-out; /* Smooth color transition */
+}
+.name:hover span:nth-child(1):hover {
+    color: yellow; 
+}
+.name:hover span:nth-child(2):hover {
+    color: indigo; 
+}
+.name:hover span:nth-child(3):hover {
+    color:blue;
+}
+.name:hover span:nth-child(4):hover {
+    color:red;
+}
+.name:hover span:nth-child(5):hover {
+    color:purple;
+}
+.name:hover span:nth-child(6):hover {
+    color:lightblue;
+}
+.name:hover span:nth-child(7):hover {
+    color:goldenrod;
+}
+.name:hover span:nth-child(8):hover {
+    color:violet;
+}
+.name:hover span:nth-child(9):hover {
+    color:green;
+}
+.name:hover span:nth-child(10):hover {
+    color:orange;
+}
+.name:hover span:nth-child(11):hover {
+    color:orangered;
+}
+.name:hover span:nth-child(12):hover {
+    color:brown;
+}
     </style>
 </head>
 
@@ -217,7 +282,8 @@
     <main>
         <section class="firstSection">
             <div class="left-2">
-                RAUNAK MISHRA
+                <p class="name"><span>R</span><span>A</span><span>U</span><span>N</span><span>A</span><span>K</span>
+                    <span>M</span><span>I</span><span>S</span><span>H</span><span>R</span><span>A</span></p>
                 <div class="left-2-1">A Front-End Developer !!
                     <p class="paragraph">I have been aspiring to be a Full Stack Developer and so I have started <br>my
                         journey in
@@ -235,7 +301,7 @@
         <section class="secondsection">
             <div>
                 <hr>
-                
+
                 <div>
                     <br>
                     <h1 class="overview">Overview About Me --</h1>
@@ -256,13 +322,15 @@
             <hr>
             <br>
             <br>
-            <p class="tools-description">Here I talk about the Tools and Languages I know or working on new one's for future. I am not expert in any of them but according to my own opinion I have graded my knowledge on every language in terms of percentage of Expertise.</p>
+            <p class="tools-description">Here I talk about the Tools and Languages I know or working on new one's for
+                future. I am not expert in any of them but according to my own opinion I have graded my knowledge on
+                every language in terms of percentage of Expertise.</p>
             <div class="tools-container">
                 <div class="tools">
                     <table>
                         <thead>
                             <tr>
-                                <td>    </td>
+                                <td> </td>
                                 <td>Tools</td>
                                 <td>How Good I am in them ?</td>
                             </tr>
