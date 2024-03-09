@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -108,7 +109,7 @@
         }
 
         .email-img img:hover {
-            filter: drop-shadow(0 0 10px rgb(64, 248, 239));
+            filter: drop-shadow(0 0 70px rgb(64, 248, 239));
         }
 
         .popup {
@@ -121,16 +122,16 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.74);
             overflow: auto;
-            cursor: pointer; /* Add cursor pointer to indicate clickable */
+            cursor: pointer;
         }
 
         .popup-content {
-            background-image: linear-gradient(to bottom right, #103CE7, #64e9ff);
+            background-image: linear-gradient(to bottom right, #103CE7, #12a075);
             margin: 15% auto;
             padding: 20px;
-            border: 1px solid #888;
+            border: 7px solid #64e9ff;
             width: 40%;
-            border-radius: 10px; /* Add border-radius for rounded corners */
+            border-radius: 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -141,7 +142,8 @@
             width: 45%;
             padding: 20px;
             border-radius: 5px;
-            color: #333; /* Change text color */
+            color: #333;
+            /* Change text color */
         }
 
         .card h3 {
@@ -155,25 +157,27 @@
         .divider {
             position: absolute;
             height: 100%;
-            width: 3px;
+            width: 7px;
             background-image: linear-gradient(to bottom, #10e0e7, #64e9ff);
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
         }
 
-        .email-1{
-            font-family: 'Poppins' , sans-serif;
+        .email-1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 22px;
+            color: black;
         }
 
-        .email-2{
-            font-family: 'Poppins' , sans-serif;
-            font-size: 22px;
+        .email-2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 21.8px;
+            color: black;
         }
 
-        .email-description{
-            font-family: 'Protest-Strike' , sans-serif;
+        .email-description {
+            font-family: 'Protest-Strike', sans-serif;
             font-size: 36px;
             letter-spacing: 1.5px;
             font-weight: 900;
@@ -181,19 +185,41 @@
             text-align: center;
             margin: 0 auto;
         }
-        .email-description u{
-            font-family: 'Times New Roman', Times, serif;
-            letter-spacing: 0.8px;
-            font-weight: 100;
-            color: #88888885;
-            font-size: 20px;
+
+        .email-icon {
+            margin-left: 70px;
         }
 
-        .email-icon{
-            margin-left: 70px;
+        .linkedin-description {
+            font-family: 'Protest-Strike', sans-serif;
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            width: 900px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .linkedin-img{
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .linkedin-img img{
+            width: 400px;
+            height: 400px;
+            transition: box-shadow 0.3s ease;
+            margin-right: 20px;
+        }
+
+        .linkedin-img img:hover{
+            filter: drop-shadow(0 0 70px rgb(23, 54, 194));
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -214,33 +240,52 @@
         <section class="email-contact">
             <div class="email-img">
                 <img src="Email-PNG-Download-Image.png" alt="" id="email-img">
-                <p class="email-description">For contacting me for Business or any Professional Activity here are two emails of mine  - - One is Official Email and the other one is Personal Email <i>(!!avoid using personal email too much)</i>
-                <br><u>click on the image</u></p>
+                <p class="email-description">For contacting me for Business or any Professional Activity here are two
+                    emails of mine - One is Official Email and the other one is Personal Email <i>(!!avoid using
+                        personal email too much)</i>
+                </p>
             </div>
         </section>
         <div id="popup" class="popup" onclick="closePopup()"> <!-- Add onclick event to close popup -->
             <div class="popup-content">
                 <div class="card">
                     <h3 class="email-1">OFFICIAL EMAIL</h3>
-                    <div class ="email-icon" onclick="window.location.href = 'mailto:raunak.mishra2023@iem.edu.in';">
-                    <img src="icons8-email-50.png" alt="">
+                    <div class="email-icon" onclick="window.location.href = 'mailto:raunak.mishra2023@iem.edu.in';">
+                        <img src="icons8-email-50.png" alt="">
                     </div>
                 </div>
-                <div class="divider"></div> 
+                <div class="divider"></div>
                 <div class="card">
                     <h3 class="email-2">PERSONAL EMAIL</h3>
-                    <div class ="email-icon" onclick="window.location.href = 'mailto:raunakm725@gmail.com';">
+                    <div class="email-icon" onclick="window.location.href = 'mailto:raunakm725@gmail.com';">
                         <img src="icons8-email-50.png" alt="">
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <hr>
+        <section class="linkedin-contact">
+            <div class="linkedin">
+                <br>
+                <br>
+                <div class="linkedin-img">
+                    <p class="linkedin-description">
+                        I am also providing my LinkedIn where I very often post my daily progress in Technological Field
+                        starting from Web Development to Mobile Development. So it would be very easy for you to know
+                        about my projects and judge my skills and personality according to them
+                    </p>
+                    <img src="linkedin.png" alt=""  onclick="window.location.href = 'https://www.linkedin.com/in/raunak-mishra-a98849267/';">
+                </div>
+            </div>
+        </section>
     </main>
     <script>
         const emailImg = document.getElementById('email-img');
         const popup = document.getElementById('popup');
 
-        emailImg.addEventListener('click', function() {
+        emailImg.addEventListener('click', function () {
             popup.style.display = 'block';
         });
 
@@ -249,4 +294,5 @@
         }
     </script>
 </body>
+
 </html>
