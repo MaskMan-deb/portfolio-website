@@ -10,23 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Strike&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <style>
-         * {
+        * {
             margin: 0;
-            padding: 1;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -70,7 +62,7 @@
             font-size: 16px;
             font-weight: 400;
             transition: transform 0.3s ease;
-            cursor: default;
+            cursor: pointer;
         }
 
         nav ul li:hover {
@@ -80,7 +72,7 @@
         }
 
         ::-webkit-scrollbar {
-            width: 8px
+            width: 8px;
         }
 
         ::-webkit-scrollbar-track {
@@ -92,15 +84,113 @@
             border-radius: 20px;
         }
 
-        .email{
-            margin: 40px;
-            font-size: 28px;
-            font-style: italic;
-
+        .email-contact {
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-left: 40px;
         }
 
-        .email-img{
-            margin-left: 10px;
+        .email-img {
+            margin-top: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .email-img img {
+            width: 400px;
+            height: 400px;
+            transition: box-shadow 0.3s ease;
+            margin-right: 40px;
+        }
+
+        .email-img img:hover {
+            filter: drop-shadow(0 0 10px rgb(64, 248, 239));
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.74);
+            overflow: auto;
+            cursor: pointer; /* Add cursor pointer to indicate clickable */
+        }
+
+        .popup-content {
+            background-image: linear-gradient(to bottom right, #103CE7, #64e9ff);
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .card {
+            width: 45%;
+            padding: 20px;
+            border-radius: 5px;
+            color: #333; /* Change text color */
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .divider {
+            position: absolute;
+            height: 100%;
+            width: 3px;
+            background-image: linear-gradient(to bottom, #10e0e7, #64e9ff);
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .email-1{
+            font-family: 'Poppins' , sans-serif;
+            font-size: 22px;
+        }
+
+        .email-2{
+            font-family: 'Poppins' , sans-serif;
+            font-size: 22px;
+        }
+
+        .email-description{
+            font-family: 'Protest-Strike' , sans-serif;
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            width: 1000px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .email-description u{
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 0.8px;
+            font-weight: 100;
+            color: #88888885;
+            font-size: 20px;
+        }
+
+        .email-icon{
+            margin-left: 70px;
         }
     </style>
 </head>
@@ -110,24 +200,53 @@
             <div class="left">PERSONAL PORTFOLIO</div>
             <div class="right">
                 <ul>
-                    <a href="index.html"><li>HOME</li></a>
-                    <a href="about.html"><li>ABOUT</li></a>
-                    <a href="profile.html"><li>PROFILE</li></a>
-                    <a href="resume.html"><li>RESUME</li></a>
-                    <a href="projects.html"><li>PROJECTS</li></a>
-                    <a href="contact.html"><li>CONTACT</li></a>
+                    <li onclick="window.location.href = 'index.html';">HOME</li>
+                    <li onclick="window.location.href = 'about.html';">ABOUT</li>
+                    <li onclick="window.location.href = 'profile.html';">PROFILE</li>
+                    <li onclick="window.location.href = 'resume.html';">RESUME</li>
+                    <li onclick="window.location.href = 'projects.html';">PROJECTS</li>
+                    <li onclick="window.location.href = 'contact.html';">CONTACT</li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="email">
-            <h2><a href="mailto:raunak.mishra2023@iem.edu.in">raunak.mishra2023@iem.edu.in</a></h2>
-            <h2><a href="mailto:raunakm725@gmail.com">raunakm725@gmail.com</a></h2>
-        </div>
-        <div class="email-img">
-            <img src="Email-PNG-Download-Image.png" alt="">
+        <section class="email-contact">
+            <div class="email-img">
+                <img src="Email-PNG-Download-Image.png" alt="" id="email-img">
+                <p class="email-description">For contacting me for Business or any Professional Activity here are two emails of mine  - - One is Official Email and the other one is Personal Email <i>(!!avoid using personal email too much)</i>
+                <br><u>click on the image</u></p>
+            </div>
+        </section>
+        <div id="popup" class="popup" onclick="closePopup()"> <!-- Add onclick event to close popup -->
+            <div class="popup-content">
+                <div class="card">
+                    <h3 class="email-1">OFFICIAL EMAIL</h3>
+                    <div class ="email-icon" onclick="window.location.href = 'mailto:raunak.mishra2023@iem.edu.in';">
+                    <img src="icons8-email-50.png" alt="">
+                    </div>
+                </div>
+                <div class="divider"></div> 
+                <div class="card">
+                    <h3 class="email-2">PERSONAL EMAIL</h3>
+                    <div class ="email-icon" onclick="window.location.href = 'mailto:raunakm725@gmail.com';">
+                        <img src="icons8-email-50.png" alt="">
+                        </div>
+                </div>
+            </div>
         </div>
     </main>
+    <script>
+        const emailImg = document.getElementById('email-img');
+        const popup = document.getElementById('popup');
+
+        emailImg.addEventListener('click', function() {
+            popup.style.display = 'block';
+        });
+
+        function closePopup() {
+            popup.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
