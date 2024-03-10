@@ -200,22 +200,49 @@
             margin: 0 auto;
         }
 
-        .linkedin-img{
+        .linkedin-img {
             margin-top: 20px;
             position: relative;
             display: flex;
             align-items: center;
         }
 
-        .linkedin-img img{
+        .linkedin-img img {
             width: 400px;
             height: 400px;
             transition: box-shadow 0.3s ease;
             margin-right: 20px;
         }
 
-        .linkedin-img img:hover{
+        .linkedin-img img:hover {
             filter: drop-shadow(0 0 70px rgb(23, 54, 194));
+        }
+
+        .twitter-description{
+            font-family: 'Protest-Strike', sans-serif;
+            font-size: 36px;
+            letter-spacing: 1.5px;
+            font-weight: 900;
+            width: 1000px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .twitter-img{
+
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .twitter-img img{
+            width: 600px;
+            height: 600px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .twitter-img img:hover{
+            filter: drop-shadow(0 0 100px rgb(6, 56, 219))
         }
     </style>
 </head>
@@ -276,7 +303,25 @@
                         starting from Web Development to Mobile Development. So it would be very easy for you to know
                         about my projects and judge my skills and personality according to them
                     </p>
-                    <img src="linkedin.png" alt=""  onclick="window.location.href = 'https://www.linkedin.com/in/raunak-mishra-a98849267/';">
+                    <a href="https://www.linkedin.com/in/raunak-mishra-a98849267/" target="_blank">
+                        <img src="linkedin.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <hr>
+        <section class="twitter-contact">
+            <div class="twitter">
+                <br>
+                <div class="twitter-img">
+                    <a href="https://twitter.com/TryCatchRaunak" target="_blank">
+                        <img src="X-by-Twitter.png" alt="">
+                    </a>
+                    <p class="twitter-description">Here's my X (Twitter) profile where I interact with people sharing
+                        same interests as mine. We there help or take help from people in solving our daily problems we
+                        face in development. You can also contact me there </p>
                 </div>
             </div>
         </section>
