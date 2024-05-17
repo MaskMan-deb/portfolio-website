@@ -122,6 +122,14 @@
             border-radius: 200px;
         }
 
+        .secondpic {
+            margin: 25px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            border-radius: 200px;
+        }
+
         .heading {
             display: flexbox;
             margin-left: 80px;
@@ -134,7 +142,16 @@
             font-style: normal;
         }
 
-        .myphotos {
+        .firstphoto {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .secondphoto {
             display: flex;
             justify-content: space-around;
             font-family: 'Roboto', sans-serif;
@@ -144,7 +161,14 @@
         }
 
         .para1 {
-            margin: 18px;
+            margin: 16px;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .para2 {
+            line-height-step: 3px;
+            margin-left: 20px;
             margin-top: 32px;
             align-items: center;
         }
@@ -169,12 +193,22 @@
     </header>
     <h1 class="heading"><i>ABOUT ME</i></h1>
     <main class="about-me">
-        <section class="myphotos">
+        <section class="firstphoto">
             <img class="firstpic" src="raunakchhota.jpg" alt="">
             <p class="para1">This is the picture of the very First Day of my very first school !<br>Yeah, I started my
                 school at an age of two and half years from Morning Bells School, Shyamnagar, Kolkata, West Bengal,
-                India.<br><br>I often hear my Mom say that I was maybe the only kid who wasn't crying that day which was
-                probably the signature of every child on the very first day of their school life</p>
+                India.<br><br>I often hear my Mom say that I was maybe the only kid who wasn't crying that day which
+                probably is the tradition for every child on the very first day of their school life.</p>
+        </section>
+        <br>
+        <section class="secondphoto">
+            <p class="para2">
+                Here I am already seven years old .<br>This is a cropped photo and beside me my younger sister is
+                sitting.<br>This is the picture of BNR Garden, a small Family park in Kharaghpur, West Bengal where we
+                lived before my father was transferred to Kolkata.<br>This is a very pretty garden with lots of
+                beautiful flowers and it is also famous for the same.
+            </p>
+            <img class="secondpic" src="raunakkv.jpeg" alt="">
         </section>
     </main>
 </body>
