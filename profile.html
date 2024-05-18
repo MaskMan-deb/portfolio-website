@@ -32,6 +32,12 @@
         body {
             background-color: rgb(14, 9, 43);
             color: white;
+            margin: 0;
+            height: 100vh;
+            background-image: url('profilebg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat-y;
         }
 
         nav {
@@ -91,6 +97,20 @@
             background-color: rgb(74, 46, 231);
             border-radius: 20px;
         }
+
+        .profilepic{
+            border: 12px solid #675881;
+            border-radius: 50%;
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            object-position: 60% 60%;
+            overflow: hidden;
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            
+        }
     </style>
 </head>
 <body>
@@ -109,5 +129,8 @@
             </div>
         </nav>
     </header>
+    <main>
+        <img src="profile_pic.jpeg" class="profilepic" alt="">
+    </main>
 </body>
 </html>
