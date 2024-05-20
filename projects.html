@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +25,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <style>
-         * {
+        * {
             margin: 0;
             padding: 1;
         }
 
-        ::selection{
+        ::selection {
             background: #ce077b;
             color: #ffffff;
         }
 
-        ::-moz-selection{
+        ::-moz-selection {
             background: #ce077b;
             color: #ffffff;
         }
@@ -110,9 +111,51 @@
             min-height: 100%;
             z-index: -1;
             object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        .heading {
+            font-family: 'Anta', sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            font-style: italic;
+            margin: 30px;
+            margin-left: 100px;
+        }
+
+        .githubProfileCard {
+            margin: 50px;
+            background-color: rgb(12, 14, 13);
+            height: 400px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            border-radius: 50px;
+            z-index: 2;
+        }
+
+        .githubPic {
+            height: 230px;
+            width: 230px;
+            border-radius: 200px;
+            margin: 30px;
+        }
+
+        .copyright-section {
+            display: flex;
+            justify-content: center;
+            background-color: #050111;
+            height: 300px;
+            margin-top: 80px;
+        }
+
+        .copyright {
+            margin-top: 90px;
+            color: #d1c9e9b4;
         }
     </style>
 </head>
+
 <body>
     <video autoplay muted loop class="video-background">
         <source src="background%20screen.mp4" type="video/mp4">
@@ -133,5 +176,25 @@
             </div>
         </nav>
     </header>
+    <main class="main">
+        <section class="head">
+            <div class="heading">
+                <h1>My Projects</h1>
+            </div>
+        </section>
+
+        <hr>
+        <section class="Contents">
+            <div class="githubProfileCard">
+                <img src="69429073.jpeg" class="githubPic" alt="">
+            </div>
+        </section>
+        <section class="copyright-section">
+            <div class="copyright">
+                <p>Copyright 2024©. All Rights Reserved</p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
