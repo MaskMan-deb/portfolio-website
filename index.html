@@ -33,6 +33,19 @@
         body {
             background-color: rgb(14, 9, 43);
             color: white;
+            background-image: url('desmumtz13.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        ::selection{
+            background: #ce077b;
+            color: #ffffff;
+        }
+
+        ::-moz-selection{
+            background: #ce077b;
+            color: #ffffff;
         }
 
         nav {
@@ -197,81 +210,98 @@
         }
 
         .name {
-    display: inline-block;
-    font-family: 'Russo One', sans-serif;
-    font-size: 72px;
-    letter-spacing: 1.5px;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative; /* Ensure proper positioning for the hover effect */
-}
+            display: inline-block;
+            font-family: 'Russo One', sans-serif;
+            font-size: 72px;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            /* Ensure proper positioning for the hover effect */
+        }
 
-.name:hover span {
-    animation: popAndColor 0.5s forwards;
-}
+        .name:hover span {
+            animation: popAndColor 0.5s forwards;
+        }
 
-@keyframes popAndColor {
-    0% {
-        transform: scale(1); /* Initial scale */
-    }
-    100% {
-        transform: scale(1.1); /* Scale up to 110% */
-    }
-}
+        @keyframes popAndColor {
+            0% {
+                transform: scale(1);
+                /* Initial scale */
+            }
 
-.name span {
-    display: inline-block;
-    transition: color 0.5s ease-in-out; /* Smooth color transition */
-}
-.name:hover span:nth-child(1):hover {
-    color: yellow; 
-}
-.name:hover span:nth-child(2):hover {
-    color: indigo; 
-}
-.name:hover span:nth-child(3):hover {
-    color:blue;
-}
-.name:hover span:nth-child(4):hover {
-    color:red;
-}
-.name:hover span:nth-child(5):hover {
-    color:purple;
-}
-.name:hover span:nth-child(6):hover {
-    color:lightblue;
-}
-.name:hover span:nth-child(7):hover {
-    color:goldenrod;
-}
-.name:hover span:nth-child(8):hover {
-    color:violet;
-}
-.name:hover span:nth-child(9):hover {
-    color:green;
-}
-.name:hover span:nth-child(10):hover {
-    color:orange;
-}
-.name:hover span:nth-child(11):hover {
-    color:orangered;
-}
-.name:hover span:nth-child(12):hover {
-    color:brown;
-}
+            100% {
+                transform: scale(1.1);
+                /* Scale up to 110% */
+            }
+        }
 
-.copyright-section{
-    display: flex;
-    justify-content: center;
-    background-color: #050111;
-    height: 300px;
-    margin-top: 80px;
-}
+        .name span {
+            display: inline-block;
+            transition: color 0.5s ease-in-out;
+            /* Smooth color transition */
+        }
 
-.copyright{
-    margin-top: 90px;
-    color:#d1c9e9b4;
-}
+        .name:hover span:nth-child(1):hover {
+            color: yellow;
+        }
+
+        .name:hover span:nth-child(2):hover {
+            color: indigo;
+        }
+
+        .name:hover span:nth-child(3):hover {
+            color: blue;
+        }
+
+        .name:hover span:nth-child(4):hover {
+            color: red;
+        }
+
+        .name:hover span:nth-child(5):hover {
+            color: purple;
+        }
+
+        .name:hover span:nth-child(6):hover {
+            color: lightblue;
+        }
+
+        .name:hover span:nth-child(7):hover {
+            color: goldenrod;
+        }
+
+        .name:hover span:nth-child(8):hover {
+            color: violet;
+        }
+
+        .name:hover span:nth-child(9):hover {
+            color: green;
+        }
+
+        .name:hover span:nth-child(10):hover {
+            color: orange;
+        }
+
+        .name:hover span:nth-child(11):hover {
+            color: orangered;
+        }
+
+        .name:hover span:nth-child(12):hover {
+            color: brown;
+        }
+
+        .copyright-section {
+            display: flex;
+            justify-content: center;
+            background-color: #050111;
+            height: 300px;
+            margin-top: 80px;
+        }
+
+        .copyright {
+            margin-top: 90px;
+            color: #d1c9e9b4;
+        }
     </style>
 </head>
 
@@ -296,7 +326,8 @@
         <section class="firstSection">
             <div class="left-2">
                 <p class="name"><span>R</span><span>A</span><span>U</span><span>N</span><span>A</span><span>K</span>
-                    <span>M</span><span>I</span><span>S</span><span>H</span><span>R</span><span>A</span></p>
+                    <span>M</span><span>I</span><span>S</span><span>H</span><span>R</span><span>A</span>
+                </p>
                 <div class="left-2-1">A Front-End Developer !!
                     <p class="paragraph">I have been aspiring to be a Full Stack Developer and so I have started <br>my
                         journey in
@@ -423,9 +454,9 @@
             </div>
         </section>
         <section class="copyright-section">
-                <div class="copyright">
-                    <p>Copyright 2024©. All Rights Reserved</p>
-                </div>
+            <div class="copyright">
+                <p>Copyright 2024©. All Rights Reserved</p>
+            </div>
         </section>
     </main>
 </body>

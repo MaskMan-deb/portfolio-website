@@ -45,9 +45,8 @@
             background-color: rgb(14, 9, 43);
             color: white;
             margin: 0;
-            height: 100vh;
             background-image: url('aboutbg.jpg');
-            background-size:cover;
+            background-size: cover;
             background-position: center;
             background-repeat: repeat-y;
         }
@@ -97,6 +96,16 @@
             color: #2bb7ee;
         }
 
+        ::selection{
+            background: #ce077b;
+            color: #ffffff;
+        }
+
+        ::-moz-selection{
+            background: #ce077b;
+            color: #ffffff;
+        }
+
         ::-webkit-scrollbar {
             width: 8px
         }
@@ -137,6 +146,17 @@
             border-radius: 200px;
         }
 
+        .thirdpic {
+            margin: 25px;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            border-radius: 200px;
+            object-fit: cover;
+            overflow: hidden;
+            object-position: 80% 0%;
+        }
+
         .heading {
             display: flexbox;
             margin-left: 80px;
@@ -167,6 +187,15 @@
             font-style: italic;
         }
 
+        .thirdphoto {
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Roboto', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            font-style: italic;
+        }
+
         .para1 {
             margin: 16px;
             margin-top: 30px;
@@ -177,6 +206,13 @@
             line-height-step: 3px;
             margin-left: 20px;
             margin-top: 32px;
+            align-items: center;
+        }
+
+        .para3 {
+            line-height-step: 5px;
+            margin: 16px;
+            margin-top: 20px;
             align-items: center;
         }
 
@@ -230,7 +266,24 @@
             </p>
             <img class="secondpic" src="raunakkv.jpeg" alt="">
         </section>
+        <br>
+        <section class="thirdphoto">
+            <img src="23324.jpeg" class="thirdpic" alt="">
+            <p class="para3">
+                In this picture I am standing with my Sister and here I am <br>around eleven years old. We are very
+                happy
+                after shifting <br>in our new flat in Kolkata whereas beforehand we lived<br> in Kharaghpur due to my
+                father's
+                job in South Eastern <br>Railways.It was only at this time I took admission in <br>St.Xavier's Institution,
+                the school which gave me endless<br> memories and lifetime friends.
+            </p>
+        </section>
+        <section class="4thphoto">
+            <p class="para4">
 
+            </p>
+            <img src="" class="4thpic" alt="">
+        </section>
     </main>
     <section class="copyright-section">
         <div class="copyright">
